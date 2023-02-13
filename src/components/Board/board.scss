@@ -1,0 +1,52 @@
+#container_board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  .shell {
+    background-color: rgba(255, 255, 255, 0.334);
+    width: 150px;
+    height: 150px;
+    &.x {
+      .x {
+        svg {
+          display: flex;
+        }
+      }
+    }
+    &.o {
+      .circle {
+        svg {
+          display: flex;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      &.x {
+        svg {
+          fill: red;
+        }
+      }
+      svg {
+        width: 150px;
+        height: 150px;
+        fill: white;
+        display: none;
+      }
+    }
+  }
+}
+#container_players {
+  div {
+    h2 {
+      color: white;
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: white;
+      }
+    }
+  }
+}
